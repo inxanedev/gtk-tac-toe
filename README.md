@@ -7,4 +7,4 @@ Then, make a new build folder in the project root, and run `cmake ..`.
 When the cmake completes, run `make` and the binary will be generated.
 # Screenshots
 ![screenshot 1](https://github.com/inxanedev/gtk-tac-toe/blob/master/screenshots/gtk-tac-toe-1.png?raw=true)  
-![screenshot 2](https://github.com/inxanedev/gtk-tac-toe/blob/master/screenshots/gtk-tac-toe-1.png)?raw=true
+![screenshot 2](https://github.com/inxanedev/gtk-tac-toe/blob/master/screenshots/gtk-tac-toe-2.png?raw=true)
