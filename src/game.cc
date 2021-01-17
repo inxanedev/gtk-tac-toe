@@ -1,13 +1,13 @@
 #include "game.h"
+#include <algorithm>
+
 Game::Game() {
     current_player = Game::PieceState::X;
     move_counter = 0;
-
-    for (int y = 0; y < 3; y++) {
-        for (int x = 0; x < 3; x++) {
-            board[y][x] = Game::PieceState::Empty;
-        }
-    }
+    
+    std::for_each(board.begin(), board.end(), [](std::array<PieceState, 3>& arr) {
+        arr.fill(PieceState::Empty);
+    });
 }
 
 bool Game::set_piece(int y, int x) {

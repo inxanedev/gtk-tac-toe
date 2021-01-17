@@ -1,4 +1,7 @@
 #pragma once
+
+#include <array>
+
 class Game {
     public:
         // Represents the state of a spot in a tic tac toe board.
@@ -25,7 +28,7 @@ class Game {
         // Get the result of the game. 
         Result get_result();
     private:
-        PieceState board[3][3];
+        std::array<std::array<PieceState, 3>, 3> board;
 
         PieceState check_three(PieceState a, PieceState b, PieceState c);
         Result state_to_result(PieceState state);
